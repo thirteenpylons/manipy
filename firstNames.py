@@ -3,7 +3,7 @@ Find most common first names in a list of people.
 
 This can be used after cleaning your data.
 
-Example of cleaned data structure used: ./example/names.txt
+Example of cleaned data used: ./example/names.txt
 
 Author: Christian M. Fulton
 Date: 05.Aug.2021
@@ -11,6 +11,21 @@ Date: 05.Aug.2021
 
 
 def main():
+    """
+    Exec
+    """
+    first_names()
+
+    #impl opt exp data
+    #ex = input("Would you like to export data?: ")
+
+
+def first_names():
+    """
+    Count first names in dataset
+
+    This function will sort and place names in dict('name': i, ..) 
+    """
     file = input("Enter the filename: ")
 
     p = []
@@ -28,3 +43,17 @@ def main():
                 d[fname] += 1
 
     print(d)
+
+def top_n(names):
+    """
+    Provide top n list of names
+
+    input(n)
+    """
+    pass
+
+def export():
+    """
+    Option to export data
+    """
+    pass
