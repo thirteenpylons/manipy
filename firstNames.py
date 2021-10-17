@@ -14,8 +14,13 @@ def main():
     """
     Exec
     """
-    first_names()
-
+    fname = first_names()
+    
+    s = input("Would you like to sort?: ")
+    if s == 'y':
+        top_n(fname)
+    else:
+        pass
     #impl opt exp data
     #ex = input("Would you like to export data?: ")
 
@@ -41,8 +46,7 @@ def first_names():
             fname = line.split(' ')[0].lower()
             if fname in d:
                 d[fname] += 1
-
-    print(d)
+    return d
 
 def top_n(names):
     """
@@ -50,7 +54,9 @@ def top_n(names):
 
     input(n)
     """
-    pass
+    n = int(input("Enter number of names to sort: "))
+    name = sorted(names, key=names.get, reverse=True)[:n]
+    print(name)
 
 def export():
     """
