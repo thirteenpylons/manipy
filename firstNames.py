@@ -1,6 +1,10 @@
 """
 Find most common first names in a list of people.
 
+This can be used after cleaning your data.
+
+Example of cleaned data structure used: ./example/names.txt
+
 Author: Christian M. Fulton
 Date: 05.Aug.2021
 """
