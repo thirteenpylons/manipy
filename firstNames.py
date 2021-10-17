@@ -42,7 +42,7 @@ def first_names():
             if fname in d:
                 d[fname] += 1
 
-    print(d)
+    return d
 
 def top_n(names):
     """
