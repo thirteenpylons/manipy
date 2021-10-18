@@ -15,7 +15,8 @@ def main():
     Exec
     """
     fname = first_names()
-    
+
+    # clean this up and err handling:
     s = input("Would you like to sort?: ")
     if s == 'y':
         top_n(fname)
